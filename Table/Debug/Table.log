@@ -1,0 +1,21 @@
+﻿  TTreeTable.cpp
+  Создание кода...
+  Компиляция...
+  main.cpp
+c:\users\lexat\documents\github\table\table\main.cpp(209): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\lexat\documents\github\table\table\main.cpp(214): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\lexat\documents\github\table\table\main.cpp(219): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\lexat\documents\github\table\table\main.cpp(224): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\lexat\documents\github\table\table\main.cpp(229): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\lexat\documents\github\table\table\tsorttable.h(75): warning C4018: >: несоответствие типов со знаком и без знака
+  c:\users\lexat\documents\github\table\table\tsorttable.h(73): note: при компиляции функции-члена "<Нет данных>" класса <Нет данных>
+  c:\users\lexat\documents\github\table\table\main.cpp(26): note: см. ссылку на создание экземпляров класса шаблон при компиляции "TSortTable<std::string,int>"
+c:\users\lexat\documents\github\table\table\tarrayhash.h(40): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\users\lexat\documents\github\table\table\tarrayhash.h(32): note: при компиляции функции-члена "<Нет данных>" класса <Нет данных>
+  c:\users\lexat\documents\github\table\table\main.cpp(27): note: см. ссылку на создание экземпляров функции шаблон при компиляции "TArrayHash<std::string,int>::TArrayHash(int,int)"
+  c:\users\lexat\documents\github\table\table\main.cpp(27): note: см. ссылку на создание экземпляров класса шаблон при компиляции "TArrayHash<std::string,int>"
+c:\users\lexat\documents\github\table\table\tarrayhash.h(58): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\users\lexat\documents\github\table\table\tarrayhash.h(54): note: при компиляции функции-члена "<Нет данных>" класса <Нет данных>
+  Создание кода...
+  Table.vcxproj -> C:\Users\lexat\Documents\GitHub\Table\Table\Debug\Table.exe
+  Table.vcxproj -> C:\Users\lexat\Documents\GitHub\Table\Table\Debug\Table.pdb (Full PDB)

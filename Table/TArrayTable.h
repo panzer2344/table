@@ -27,7 +27,7 @@ public:
 template<class TKey, class TValue>
 TArrayTable<TKey, TValue>::TArrayTable(size_t _size) {
 	size = _size;
-	arr = new TRecord<TKey, TValue>(size);
+	arr = new TRecord<TKey, TValue>[size];
 	currNum = 0;
 }
 

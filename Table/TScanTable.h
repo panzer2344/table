@@ -6,12 +6,12 @@ class TScanTable :
 	public TArrayTable<TKey, TValue>
 {
 public:
-	TScanTable() : TArrayTable() {}
-	~TScanTable() : ~TArrayTable() {}
+	TScanTable(size_t size = 100) : TArrayTable(size) {}
+	~TScanTable() {}
 
 	virtual bool Find(TKey tk);
 	virtual bool Insert(TRecord<TKey, TValue> tr);
-	virtual void Delete(TKey tk);
+	virtual bool Delete(TKey tk);
 };
 
 template<class TKey, class TValue>
@@ -19,7 +19,7 @@ bool TScanTable<TKey, TValue>::Find(TKey tk) {
 	for (int i = 0; i < dataCount; i++) {
 		eff++;
 
-		if (arr[i]->key == tk) {
+		if (arr[i].key == tk) {
 			currNum = i;
 			return true;
 		}
@@ -30,7 +30,7 @@ bool TScanTable<TKey, TValue>::Find(TKey tk) {
 
 template<class TKey, class TValue>
 bool TScanTable<TKey, TValue>::Insert(TRecord<TKey, TValue> tr) {
-	if (!Find(tr->key)) {
+	if (!Find(tr.key)) {
 		arr[currNum] = tr;
 		dataCount++;
 		return true;
@@ -39,10 +39,14 @@ bool TScanTable<TKey, TValue>::Insert(TRecord<TKey, TValue> tr) {
 }
 
 template<class TKey, class TValue>
-void TScanTable<TKey, TValue>::Delete(TKey tk) {
+bool TScanTable<TKey, TValue>::Delete(TKey tk) {
 	if (Find(tk)) {
 		arr[currNum] = arr[dataCount - 1];
 		dataCount--;
+		return true;
 	}
+	return false;
 }
+
+
 

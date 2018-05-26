@@ -2,11 +2,4 @@
 
 
 
-THashTable::THashTable()
-{
-}
 
-
-THashTable::~THashTable()
-{
-}

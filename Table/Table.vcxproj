@@ -118,6 +118,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="stack.h" />
+    <ClInclude Include="TArrayHash.h" />
     <ClInclude Include="TArrayTable.h" />
     <ClInclude Include="THashTable.h" />
     <ClInclude Include="TScanTable.h" />
@@ -126,6 +128,9 @@
     <ClInclude Include="TTreeTable.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stack.cpp" />
+    <ClCompile Include="TArrayHash.cpp" />
     <ClCompile Include="TArrayTable.cpp" />
     <ClCompile Include="THashTable.cpp" />
     <ClCompile Include="TScanTable.cpp" />

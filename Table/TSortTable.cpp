@@ -2,11 +2,3 @@
 
 
 
-TSortTable::TSortTable()
-{
-}
-
-
-TSortTable::~TSortTable()
-{
-}
