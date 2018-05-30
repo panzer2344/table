@@ -1,21 +1,26 @@
-﻿  TTreeTable.cpp
-  Создание кода...
-  Компиляция...
-  main.cpp
-c:\users\lexat\documents\github\table\table\main.cpp(209): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\lexat\documents\github\table\table\main.cpp(214): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\lexat\documents\github\table\table\main.cpp(219): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\lexat\documents\github\table\table\main.cpp(224): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\lexat\documents\github\table\table\main.cpp(229): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\lexat\documents\github\table\table\tsorttable.h(75): warning C4018: >: несоответствие типов со знаком и без знака
-  c:\users\lexat\documents\github\table\table\tsorttable.h(73): note: при компиляции функции-члена "<Нет данных>" класса <Нет данных>
-  c:\users\lexat\documents\github\table\table\main.cpp(26): note: см. ссылку на создание экземпляров класса шаблон при компиляции "TSortTable<std::string,int>"
-c:\users\lexat\documents\github\table\table\tarrayhash.h(40): warning C4018: <: несоответствие типов со знаком и без знака
-  c:\users\lexat\documents\github\table\table\tarrayhash.h(32): note: при компиляции функции-члена "<Нет данных>" класса <Нет данных>
-  c:\users\lexat\documents\github\table\table\main.cpp(27): note: см. ссылку на создание экземпляров функции шаблон при компиляции "TArrayHash<std::string,int>::TArrayHash(int,int)"
-  c:\users\lexat\documents\github\table\table\main.cpp(27): note: см. ссылку на создание экземпляров класса шаблон при компиляции "TArrayHash<std::string,int>"
-c:\users\lexat\documents\github\table\table\tarrayhash.h(58): warning C4018: <: несоответствие типов со знаком и без знака
-  c:\users\lexat\documents\github\table\table\tarrayhash.h(54): note: при компиляции функции-члена "<Нет данных>" класса <Нет данных>
-  Создание кода...
-  Table.vcxproj -> C:\Users\lexat\Documents\GitHub\Table\Table\Debug\Table.exe
-  Table.vcxproj -> C:\Users\lexat\Documents\GitHub\Table\Table\Debug\Table.pdb (Full PDB)
+﻿  main.cpp
+z:\table\table\main.cpp(212): warning C4018: '<': signed/unsigned mismatch
+z:\table\table\main.cpp(217): warning C4018: '<': signed/unsigned mismatch
+z:\table\table\main.cpp(222): warning C4018: '<': signed/unsigned mismatch
+z:\table\table\main.cpp(227): warning C4018: '<': signed/unsigned mismatch
+z:\table\table\main.cpp(232): warning C4018: '<': signed/unsigned mismatch
+z:\table\table\tsorttable.h(75): warning C4018: '>': signed/unsigned mismatch
+  z:\table\table\tsorttable.h(73): note: while compiling class template member function 'bool TSortTable<std::string,int>::Insert(TRecord<TKey,TValue>)'
+          with
+          [
+              TKey=std::string,
+              TValue=int
+          ]
+  z:\table\table\main.cpp(26): note: see reference to class template instantiation 'TSortTable<std::string,int>' being compiled
+z:\table\table\tarrayhash.h(40): warning C4018: '<': signed/unsigned mismatch
+  z:\table\table\tarrayhash.h(32): note: while compiling class template member function 'TArrayHash<std::string,int>::TArrayHash(int,int)'
+  z:\table\table\main.cpp(27): note: see reference to function template instantiation 'TArrayHash<std::string,int>::TArrayHash(int,int)' being compiled
+  z:\table\table\main.cpp(27): note: see reference to class template instantiation 'TArrayHash<std::string,int>' being compiled
+z:\table\table\tarrayhash.h(58): warning C4018: '<': signed/unsigned mismatch
+  z:\table\table\tarrayhash.h(54): note: while compiling class template member function 'bool TArrayHash<std::string,int>::Find(TKey)'
+          with
+          [
+              TKey=std::string
+          ]
+  Table.vcxproj -> Z:\table\Table\Debug\Table.exe
+  Table.vcxproj -> Z:\table\Table\Debug\Table.pdb (Full PDB)

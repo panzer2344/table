@@ -26,7 +26,8 @@ void main() {
 	TTable<string, int> *tableSort = new  TSortTable<string, int>(400);
 	TTable<string, int> *tableHash = new TArrayHash<string, int>(400, 13);
 
-	loadFile("kirkorbi4.txt", StringArray);
+	//loadFile("kirkorbi4.txt", StringArray);
+	loadFile("text.txt", StringArray);
 	test(tableTree, StringArray);
 	test(tableScan, StringArray);
 	test(tableHash, StringArray);
@@ -44,8 +45,9 @@ void main() {
 
 		cout << "PRINT COMMAND: ";
 		cin >> com;
+		transform(com.begin(), com.end(), com.begin(), ::toupper);
 
-		if (com == "KEY") {
+		if (com == "EXIT") {
 			break;
 		}
 
@@ -121,6 +123,7 @@ void main() {
 		if (com == "PRINT") {
 			cout << "PRINT NAME OF TABLE: ";
 			cin >> key;
+			transform(key.begin(), key.end(), key.begin(), ::tolower);
 			
 			if (key == "sort") {
 				tablePrint(tableSort);
